@@ -1,4 +1,4 @@
-# Konopause
+# Konobreak
 
 Part of **Konochi**, a personal Omarchy plugin series by Alec Xu.
 
@@ -27,13 +27,13 @@ Omarchy shell, `/usr/bin/python3` (standard library only), and `notify-send` wit
 ## Commands
 
 ```sh
-omarchy plugin enable konochi.konopause
-omarchy plugin disable konochi.konopause
-omarchy-shell konochi.konopause status
-omarchy-shell konochi.konopause toggle
-omarchy-shell konochi.konopause startBreak
-omarchy-shell konochi.konopause snooze
-omarchy-shell konochi.konopause end
+omarchy plugin enable konochi.konobreak
+omarchy plugin disable konochi.konobreak
+omarchy-shell konochi.konobreak status
+omarchy-shell konochi.konobreak toggle
+omarchy-shell konochi.konobreak startBreak
+omarchy-shell konochi.konobreak snooze
+omarchy-shell konochi.konobreak end
 ```
 
 The service is kept loaded across widget hot reloads. Backend/service changes require a shell restart to take effect.
@@ -51,8 +51,8 @@ external service installation, or network access.
 
 ```sh
 omarchy plugin add https://github.com/xvvhang/omarchy-break-reminder --enable
-omarchy plugin disable konochi.konopause
-omarchy plugin remove konochi.konopause
+omarchy plugin disable konochi.konobreak
+omarchy plugin remove konochi.konobreak
 ```
 
 Removal leaves the runtime checkpoint mentioned above. Back up unpushed changes

@@ -19,13 +19,13 @@ Item {
     stdout: SplitParser {
       onRead: function(line) {
         try { root.state = JSON.parse(line); root.receivedState = true }
-        catch (error) { console.warn("Konopause:", error) }
+        catch (error) { console.warn("Konobreak:", error) }
       }
     }
-    onExited: function(code) { root.receivedState = false; console.warn("Konopause backend stopped:", code) }
+    onExited: function(code) { root.receivedState = false; console.warn("Konobreak backend stopped:", code) }
   }
   IpcHandler {
-    target: "konochi.konopause"
+    target: "konochi.konobreak"
     function status(): string { return JSON.stringify(root.state) }
     function toggle(): void { root.send("toggle") }
     function startBreak(): void { root.send("break") }

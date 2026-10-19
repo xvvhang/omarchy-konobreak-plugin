@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "konochi.konopause",
-  "name": "Konopause",
+  "id": "konochi.konobreak",
+  "name": "Konobreak",
   "version": "1.0.0",
   "author": "alec",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "keepLoaded": true,
   "entryPoints": {"service": "Service.qml", "barWidget": "BarWidget.qml"},
   "barWidget": {
-    "displayName": "Konopause",
+    "displayName": "Konobreak",
     "category": "Time",
     "allowMultiple": false,
     "defaultSection": "right",

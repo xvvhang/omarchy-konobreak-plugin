@@ -9,7 +9,7 @@ import sys
 import threading
 import time
 
-PLUGIN_ID = "konochi.konopause"
+PLUGIN_ID = "konochi.konobreak"
 
 
 def read_config():
@@ -134,7 +134,7 @@ def main():
 
     def notify(title, body, generation):
         def worker():
-            args = ["notify-send", "-a", "Konopause", "-t", "15000"]
+            args = ["notify-send", "-a", "Konobreak", "-t", "15000"]
             if generation is not None:
                 args += ["-A", "break=Start Break", "-A", "snooze=Remind in 5 min"]
             try:
