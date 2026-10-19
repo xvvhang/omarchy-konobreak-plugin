@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "xvvhang.break-reminder"
+  moduleName: "konochi.konopause"
   readonly property var service: bar?.shell?.serviceFor(moduleName)
   readonly property var state: service ? service.state : ({phase: "idle", paused: false, remaining: 0})
   readonly property bool engaged: state.phase !== "idle" && state.phase !== "complete"
@@ -15,7 +15,7 @@ BarWidget {
     var seconds = Math.max(0, state.remaining || 0)
     return String(Math.floor(seconds / 60)).padStart(2, "0") + ":" + String(seconds % 60).padStart(2, "0")
   }
-  readonly property string phaseLabel: state.phase === "work" ? "Working" : state.phase === "break" ? "Taking a Break" : state.phase === "waiting" ? "Time for a Break" : state.phase === "snooze" ? "Break Reminder Snoozed" : state.phase === "complete" ? "Session Complete" : "Ready to Start"
+  readonly property string phaseLabel: state.phase === "work" ? "Working" : state.phase === "break" ? "Taking a Break" : state.phase === "waiting" ? "Time for a Break" : state.phase === "snooze" ? "Konopause Snoozed" : state.phase === "complete" ? "Session Complete" : "Ready to Start"
   readonly property string cycleLabel: !engaged ? "" : state.mode === "continuous" ? "Cycle " + state.cycle : "Cycle " + state.cycle + " of " + (state.mode === "once" ? 1 : state.total)
   readonly property bool opened: panel.opened
   readonly property bool popoutSwitchClosing: panel.popoutSwitchClosing

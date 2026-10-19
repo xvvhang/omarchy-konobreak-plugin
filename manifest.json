@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "xvvhang.break-reminder",
-  "name": "Break Reminder",
+  "id": "konochi.konopause",
+  "name": "Konopause",
   "version": "1.0.0",
   "author": "alec",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "keepLoaded": true,
   "entryPoints": {"service": "Service.qml", "barWidget": "BarWidget.qml"},
   "barWidget": {
-    "displayName": "Break Reminder",
+    "displayName": "Konopause",
     "category": "Time",
     "allowMultiple": false,
     "defaultSection": "right",

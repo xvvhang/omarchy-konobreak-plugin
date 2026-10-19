@@ -19,13 +19,13 @@ Item {
     stdout: SplitParser {
       onRead: function(line) {
         try { root.state = JSON.parse(line); root.receivedState = true }
-        catch (error) { console.warn("Break Reminder:", error) }
+        catch (error) { console.warn("Konopause:", error) }
       }
     }
-    onExited: function(code) { root.receivedState = false; console.warn("Break Reminder backend stopped:", code) }
+    onExited: function(code) { root.receivedState = false; console.warn("Konopause backend stopped:", code) }
   }
   IpcHandler {
-    target: "xvvhang.break-reminder"
+    target: "konochi.konopause"
     function status(): string { return JSON.stringify(root.state) }
     function toggle(): void { root.send("toggle") }
     function startBreak(): void { root.send("break") }

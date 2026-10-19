@@ -1,4 +1,6 @@
-# Break Reminder
+# Konopause
+
+Part of **Konochi**, a personal Omarchy plugin series by Alec Xu.
 
 An Omarchy shell plugin with a shared work/break timer across all monitors.
 
@@ -25,13 +27,13 @@ Omarchy shell, `/usr/bin/python3` (standard library only), and `notify-send` wit
 ## Commands
 
 ```sh
-omarchy plugin enable xvvhang.break-reminder
-omarchy plugin disable xvvhang.break-reminder
-omarchy-shell xvvhang.break-reminder status
-omarchy-shell xvvhang.break-reminder toggle
-omarchy-shell xvvhang.break-reminder startBreak
-omarchy-shell xvvhang.break-reminder snooze
-omarchy-shell xvvhang.break-reminder end
+omarchy plugin enable konochi.konopause
+omarchy plugin disable konochi.konopause
+omarchy-shell konochi.konopause status
+omarchy-shell konochi.konopause toggle
+omarchy-shell konochi.konopause startBreak
+omarchy-shell konochi.konopause snooze
+omarchy-shell konochi.konopause end
 ```
 
 The service is kept loaded across widget hot reloads. Backend/service changes require a shell restart to take effect.
@@ -49,8 +51,8 @@ external service installation, or network access.
 
 ```sh
 omarchy plugin add https://github.com/xvvhang/omarchy-break-reminder --enable
-omarchy plugin disable xvvhang.break-reminder
-omarchy plugin remove xvvhang.break-reminder
+omarchy plugin disable konochi.konopause
+omarchy plugin remove konochi.konopause
 ```
 
 Removal leaves the runtime checkpoint mentioned above. Back up unpushed changes

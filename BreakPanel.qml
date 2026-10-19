@@ -4,7 +4,7 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "xvvhang.break-reminder"
+  moduleName: "konochi.konopause"
   manageIpc: false
   property var anchorItem: null
   property var hostWidget: null
@@ -64,7 +64,7 @@ Panel {
         id: column
         width: content.width
         spacing: Style.space(14)
-        Text { text: "Break Reminder"; color: root.barForeground; font.family: Style.font.family; font.pixelSize: Style.font.body * 1.2 }
+        Text { text: "Konopause"; color: root.barForeground; font.family: Style.font.family; font.pixelSize: Style.font.body * 1.2 }
         Text {
           width: parent.width
           wrapMode: Text.WordWrap
