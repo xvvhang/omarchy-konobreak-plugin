@@ -4,7 +4,7 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "alec.break-reminder"
+  moduleName: "xvvhang.break-reminder"
   manageIpc: false
   property var anchorItem: null
   property var hostWidget: null

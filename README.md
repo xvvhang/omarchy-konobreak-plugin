@@ -25,13 +25,13 @@ Omarchy shell, `/usr/bin/python3` (standard library only), and `notify-send` wit
 ## Commands
 
 ```sh
-omarchy plugin enable alec.break-reminder
-omarchy plugin disable alec.break-reminder
-omarchy-shell alec.break-reminder status
-omarchy-shell alec.break-reminder toggle
-omarchy-shell alec.break-reminder startBreak
-omarchy-shell alec.break-reminder snooze
-omarchy-shell alec.break-reminder end
+omarchy plugin enable xvvhang.break-reminder
+omarchy plugin disable xvvhang.break-reminder
+omarchy-shell xvvhang.break-reminder status
+omarchy-shell xvvhang.break-reminder toggle
+omarchy-shell xvvhang.break-reminder startBreak
+omarchy-shell xvvhang.break-reminder snooze
+omarchy-shell xvvhang.break-reminder end
 ```
 
 The service is kept loaded across widget hot reloads. Backend/service changes require a shell restart to take effect.
@@ -49,8 +49,8 @@ external service installation, or network access.
 
 ```sh
 omarchy plugin add https://github.com/xvvhang/omarchy-break-reminder --enable
-omarchy plugin disable alec.break-reminder
-omarchy plugin remove alec.break-reminder
+omarchy plugin disable xvvhang.break-reminder
+omarchy plugin remove xvvhang.break-reminder
 ```
 
 Removal leaves the runtime checkpoint mentioned above. Back up unpushed changes

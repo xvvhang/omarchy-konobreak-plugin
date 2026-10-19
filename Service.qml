@@ -25,7 +25,7 @@ Item {
     onExited: function(code) { root.receivedState = false; console.warn("Break Reminder backend stopped:", code) }
   }
   IpcHandler {
-    target: "alec.break-reminder"
+    target: "xvvhang.break-reminder"
     function status(): string { return JSON.stringify(root.state) }
     function toggle(): void { root.send("toggle") }
     function startBreak(): void { root.send("break") }

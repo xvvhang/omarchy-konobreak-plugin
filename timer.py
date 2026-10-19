@@ -9,7 +9,7 @@ import sys
 import threading
 import time
 
-PLUGIN_ID = "alec.break-reminder"
+PLUGIN_ID = "xvvhang.break-reminder"
 
 
 def read_config():

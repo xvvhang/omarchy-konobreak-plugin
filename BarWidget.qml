@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "alec.break-reminder"
+  moduleName: "xvvhang.break-reminder"
   readonly property var service: bar?.shell?.serviceFor(moduleName)
   readonly property var state: service ? service.state : ({phase: "idle", paused: false, remaining: 0})
   readonly property bool engaged: state.phase !== "idle" && state.phase !== "complete"
