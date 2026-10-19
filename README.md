@@ -50,7 +50,7 @@ Requires Omarchy Quattro and the dependencies above. No privileged setup,
 external service installation, or network access.
 
 ```sh
-omarchy plugin add https://github.com/xvvhang/konobreak --enable
+omarchy plugin add https://github.com/xvvhang/omarchy-konobreak-plugin --enable
 omarchy plugin disable konochi.konobreak
 omarchy plugin remove konochi.konobreak
 ```
