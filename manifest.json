@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "alec.break-reminder",
+  "name": "Break Reminder",
+  "version": "1.0.0",
+  "author": "alec",
+  "license": "MIT",
+  "description": "Work and break intervals with confirmation, pause and resume",
+  "kinds": ["service", "bar-widget"],
+  "keepLoaded": true,
+  "entryPoints": {"service": "Service.qml", "barWidget": "BarWidget.qml"},
+  "barWidget": {
+    "displayName": "Break Reminder",
+    "category": "Time",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {"workMinutes": 50, "breakMinutes": 5, "repeatMode": "continuous", "cycles": 4, "showTimer": true}
+  }
+}
