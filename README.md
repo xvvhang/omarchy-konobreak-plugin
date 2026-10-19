@@ -4,6 +4,12 @@ Part of **Konochi**, a personal Omarchy plugin series by Alec Xu.
 
 An Omarchy shell plugin with a shared work/break timer across all monitors.
 
+## Preview
+
+![Konobreak panel showing a paused work session, remaining time, session controls, work and break durations, and repeat settings](preview.png)
+
+## Features
+
 - Left-click: immediately open or close the settings and session controls panel.
 - Right-click: toggle the saved Show Timer in Bar setting. Start, pause, and resume are also available in the panel.
 - Working and break intervals use an `mm:ss` countdown, also available while paused when Show Timer in Bar is enabled.
